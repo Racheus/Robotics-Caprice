@@ -55,9 +55,9 @@ ax.zaxis.set_ticklabels(ax.get_zticks(), fontproperties=font)
 
 
 R = get_Rotation_Matrix()
-print("=============== Rotation Matrix ===============")
+print("============== Rotation Matrix ===============")
 print(R)
-print("===============================================")
+print("==============================================")
       
 rotated_coordsx = np.dot(R, [10, 0, 0])
 rotated_coordsy = np.dot(R, [0, 10, 0])

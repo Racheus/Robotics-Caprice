@@ -16,3 +16,4 @@ However I will try my best to maintain it.
 ---
 ### Chapter 1 Mathematical Foundations of Robotics
 
+[Chapter1_机器人学的数学基础](https://github.com/Racheus/Robotics-Caprice/blob/master/Chapter1_%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80.pdf)

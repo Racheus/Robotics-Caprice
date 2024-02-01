@@ -24,7 +24,7 @@ font = FontProperties(fname=r".\Carlito-Italic.ttf", size=12)
 
 
 fig = plt.figure()
-title = fig.suptitle('Z_Rotated Frame', fontproperties=font)
+title = fig.suptitle('Rotated Frame', fontproperties=font)
 
 
 title.set_y(0.9)  

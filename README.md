@@ -22,3 +22,6 @@ Code in this chpt: about rotation matrix & different rotation methods:
 
 [Chapter1_Code for Python and MATLAB](https://github.com/Racheus/Robotics-Caprice/tree/master/Robotics%20Code/Frame_Descrption_and_Transformation)
 
+Example for Chapter 1:
+
+![Insert Error!](.\Images\RotatedFrame.png)

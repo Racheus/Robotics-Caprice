@@ -24,4 +24,4 @@ Code in this chpt: about rotation matrix & different rotation methods:
 
 Example for Chapter 1:
 
-![Insert Error!](Images\RotatedFrame.png)
+![Insert Error!](Images/RotatedFrame.png)

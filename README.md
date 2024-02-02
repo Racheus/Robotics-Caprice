@@ -24,4 +24,5 @@ Code in this chpt: about rotation matrix & different rotation methods:
 
 Example for Chapter 1:
 
-![Insert Error!](Images\Figure_1.svg)
+![Insert Error!](https://github.com/Racheus/Robotics-Caprice/blob/master/Images/Figure_1.svg)
+

@@ -26,3 +26,20 @@ Example for Chapter 1:
 
 ![Insert Error!](https://github.com/Racheus/Robotics-Caprice/blob/master/Images/Figure_1.svg)
 
+
+
+Homework for Chapter1:2R-Robotics-Kinematics
+
+Report PDF edition：
+
+[Homework1: 2R-robotics-Kinematics](https://github.com/Racheus/Robotics-Caprice/blob/master/Homework1-2Rrobot-Kine/RoboticsHomework1.pdf)
+
+Results:
+
+MATLAB Version:
+
+![Insert error!](https://github.com/Racheus/Robotics-Caprice/blob/master/Homework1-2Rrobot-Kine/src/robot_trajectory.gif)
+
+Python Version:
+
+![Insert Error!](https://github.com/Racheus/Robotics-Caprice/blob/master/Homework1-2Rrobot-Kine/src/robot_trajectory_py.gif)

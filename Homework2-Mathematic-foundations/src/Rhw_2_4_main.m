@@ -15,9 +15,9 @@ R_prime = R3*R2*R1 ;
 disp("右乘得到的结果：")
 disp(R_prime);
 
-angle_new = rotm2eul(R_prime,"XYZ");
+angle_new = rotm2eul(R_prime,"ZYX");
 ans = rad2deg(angle_new);
-disp("按照XYZ分解的结果 ： ")
+disp("按照ZYX分解的结果 ： ")
 disp(ans);
 
 rmpath(genpath('.'));

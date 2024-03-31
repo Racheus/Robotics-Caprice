@@ -43,3 +43,19 @@ MATLAB Version:
 Python Version:
 
 ![Insert Error!](https://github.com/Racheus/Robotics-Caprice/blob/master/Homework1-2Rrobot-Kine/src/robot_trajectory_py.gif)
+
+
+
+Homework5-Kinematic Trajectory Planning：
+
+Report PDF edition：
+
+[homework5_Kinematic_Trajectory_Planning](https://github.com/Racheus/Robotics-Caprice/blob/master/Homework5-Kinematic-Trajectory-Planning/RoboticsHomework5.pdf)
+
+Results: From joint operation space:
+
+![Insert Error!](https://github.com/Racheus/Robotics-Caprice/blob/master/Homework5-Kinematic-Trajectory-Planning/src/angle_spline_diagram.png)
+
+Animation demo:
+
+![Insert Error!](https://github.com/Racheus/Robotics-Caprice/blob/master/Homework5-Kinematic-Trajectory-Planning/src/robot_animation.gif)

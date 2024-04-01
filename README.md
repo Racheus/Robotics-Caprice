@@ -59,3 +59,8 @@ Results: From joint operation space:
 Animation demo:
 
 ![Insert Error!](https://github.com/Racheus/Robotics-Caprice/blob/master/Homework5-Kinematic-Trajectory-Planning/src/robot_animation.gif)
+
+If planning it by pose space, the robot will have some *configuration mutation points*,which may harmful in practical engineering applications.(Maybe my method have something wrong?**MARK here**)
+
+![Insert Error!](https://github.com/Racheus/Robotics-Caprice/blob/master/Homework5-Kinematic-Trajectory-Planning/src/robot_animation_bypose.gif)
+

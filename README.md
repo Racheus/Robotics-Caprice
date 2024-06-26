@@ -64,3 +64,13 @@ If planning it by pose space, the robot will have some *configuration mutation p
 
 ![Insert Error!](https://github.com/Racheus/Robotics-Caprice/blob/master/Homework5-Kinematic-Trajectory-Planning/src/robot_animation_bypose.gif)
 
+---
+
+### Final works of Robotics 2023-2024-2
+
+This time we make a model from *Solidworks*. After using Solidworks to build the model, we used the relevant theories of robotics to calculate the reachable space, kinematics (forward and inverse), dynamics (forward and inverse) and other functions in MATLAB, and finally combined Simulink to simulate the kinematics and dynamics.
+
+![Insert Error!](https://github.com/Racheus/Robotics-Caprice/blob/master/Images/logo.png)
+
+
+

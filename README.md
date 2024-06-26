@@ -70,7 +70,5 @@ If planning it by pose space, the robot will have some *configuration mutation p
 
 This time we make a model from *Solidworks*. After using Solidworks to build the model, we used the relevant theories of robotics to calculate the reachable space, kinematics (forward and inverse), dynamics (forward and inverse) and other functions in MATLAB, and finally combined Simulink to simulate the kinematics and dynamics.
 
-![Insert Error!](https://github.com/Racheus/Robotics-Caprice/blob/master/Images/logo.png)
-
 
 

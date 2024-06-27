@@ -78,7 +78,7 @@ We took inspiration from the ABB IRB 1200 and built a model ourselves in Solidwo
 
 And we calculate the workspace by Traditional Monte Carlo method and Improved Monte Carlo method.
 
-![Insert Error!](https://github.com/Racheus/Robotics-Caprice/blob/master/Images/workspace.png)
+![Insert Error!](https://github.com/Racheus/Robotics-Caprice/blob/master/Images/workspace.jpg)
 
 We build a model in Simulink with our rigid model to simulate the Kinematics and Dynamics issues.
 

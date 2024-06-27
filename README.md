@@ -70,5 +70,19 @@ If planning it by pose space, the robot will have some *configuration mutation p
 
 This time we make a model from *Solidworks*. After using Solidworks to build the model, we used the relevant theories of robotics to calculate the reachable space, kinematics (forward and inverse), dynamics (forward and inverse) and other functions in MATLAB, and finally combined Simulink to simulate the kinematics and dynamics.
 
+![Insert Error!](https://github.com/Racheus/Robotics-Caprice/blob/master/Images/logo.png)
+
+We took inspiration from the ABB IRB 1200 and built a model ourselves in Solidworks.
+
+![Insert Error!](https://github.com/Racheus/Robotics-Caprice/blob/master/Images/Model.jpg)
+
+And we calculate the workspace by Traditional Monte Carlo method and Improved Monte Carlo method.
+
+![Insert Error!](https://github.com/Racheus/Robotics-Caprice/blob/master/Images/workspace.png)
+
+We build a model in Simulink with our rigid model to simulate the Kinematics and Dynamics issues.
+
+![Insert Error!](https://github.com/Racheus/Robotics-Caprice/blob/master/Images/ABBIRB.png)
+
 
 

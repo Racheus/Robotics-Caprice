@@ -1,0 +1,389 @@
+\documentclass[12pt]{ctexart}
+\usepackage[a4paper,total={6in,8in}]{geometry}
+\usepackage{fancyhdr}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{diagbox}
+\usepackage[utf8]{inputenc}
+\usepackage{ctex}
+\usepackage{cite}
+\usepackage{color}
+\usepackage{subfigure}
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\newfontfamily\timesfont{Times New Roman}
+\usepackage{CJK}
+\usepackage{indentfirst}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{multirow}
+\usepackage{svg}
+\usepackage{makecell}
+\usepackage{amsfonts}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{mathabx}
+\usepackage{diagbox}
+\usepackage{cases}
+\usepackage{minipage-marginpar}
+\usepackage{xcolor}
+\definecolor{cherry}{HTML}{c93756}
+\definecolor{tree}{HTML}{fef9d7}
+% 导入包
+\usepackage{hyperref}
+% 格式设置
+\hypersetup{hidelinks,
+	colorlinks=true,
+	allcolors=blue,
+	pdfstartview=Fit,
+	breaklinks=true}
+\newcommand\dlmu[2][4cm]{\hskip1pt\underline{\hbox to #1{\hss#2\hss}}\hskip3pt}
+\usepackage{fontspec} % For using system fonts with XeLaTeX or LuaLaTeX
+\setmonofont{Consolas} 
+    
+\usepackage{listings}
+    \lstset{ %
+    language= MATLAB,                % choose the language of the code
+    basicstyle=\footnotesize\ttfamily,       % the size of the fonts that are used for the code
+    numbers=left,                   % where to put the line-numbers
+    numberstyle=\footnotesize,      % the size of the fonts that are used for the line-numbers
+    stepnumber=1,                   % the step between two line-numbers. If it is 1 each line will be numbered
+    numbersep=5pt,                  % how far the line-numbers are from the code
+    backgroundcolor=\color{tree},  % choose the background color. You must add \usepackage{color}
+    showspaces=false,               % show spaces adding particular underscores
+    showstringspaces=false,         % underline spaces within strings
+    showtabs=false,                 % show tabs within strings adding particular underscores
+    frame=single,           % adds a frame around the code
+    tabsize=2,          % sets default tabsize to 2 spaces
+    captionpos=b,           % sets the caption-position to bottom
+    breaklines=true,        % sets automatic line breaking
+    breakatwhitespace=false,    % sets if automatic breaks should only happen at whitespace
+    escapeinside={\%*}{*)}          % if you want to add a comment within your code
+}
+    
+
+
+
+
+
+
+\begin{document}
+
+\input{face.tex}
+
+\pagenumbering{arabic}
+
+\section{前言}
+当我选上这门每个春季学期“报录比”不低于3的课程的时候，我就在心里埋下了一颗把这门课学到极致的种子。我也无数次从老师、学长们的口吻里得知这是一门“很硬”的课程，投入极大，回报未知。但我相信《机器人学》这门课程一定是我们专业通向未来的一把钥匙，一定值得去投入时间、反复钻研，一定值得和一群志同道合的朋友们一起去探讨、去实践。
+
+4月初我们就早早地建好了我们的微信群，群名叫\textcolor{red}{RoboticsMen}，显而易见，全是男生。我们在群里讨论、分享、交流，我们一起学习、一起进步。不管是令人费解的实验、还是充满未知和挑战的课程作业，大家都在群内保持高度的活跃，相互鼓励，互帮互助。从分工到选题、从建模到仿真，我们一起完成了我们本科生涯的第一门专业选修课的课程设计，留下的回忆也弥足珍贵。
+
+本项目的第二、三章背景调研和实物建模部分由黄桢同学主要负责，孙修洁同学辅助完成。杨梓鸿同学负责了第四、第六章的选型和运动学计算部分。孙修洁同学负责了第五章的工作空间分析，以及第六章的部分调研工作。廖清淞同学负责了第七章的动力学计算和实现。我负责了第八章的运动、动力系统的模型搭建和控制仿真。最后由我和廖清淞同学、杨梓鸿同学共同完成了报告的撰写和排版工作。
+
+5月的全力投入，6月的紧张答辩，最后用这份精美的报告作为我们这门课的完美谢幕。在这里，感谢吴建华老师和熊振华老师的悉心指导，感谢我的队友们的辛勤付出，让我留下了一段美好的回忆。
+
+机器人学是一门伟大的学科，我常常在思考，它就像我们一直使用的PID控制器，从人力拉车到蒸汽朋克，再到如今的人工智能的盛况空前，似乎都和它有关。这门学科串联起了工业的过去、现在和未来，这门课程的结束不应该成为我们探索未至之境的终点。我相信有朝一日，我们会在建设工业强国之路上最动人的重逢。
+
+\begin{flushright}
+    \fontsize{16}{20}\selectfont\kaishu 赵四维{ \quad \quad \quad \quad}\\
+    \fontsize{16}{20}\selectfont\kaishu 2024年6月23日
+\end{flushright}
+
+
+\newpage
+\tableofcontents
+
+
+\newpage
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{ME3403-01}
+\fancyhead[C]{基于ABB-IRB-1200的协作机器人课程设计}
+\fancyhead[R]{2023-2024-2}
+\fancyfoot[C]{\thepage}
+
+% PART I Chapter1-4 
+\input{part1.tex}
+
+\newpage
+
+%PART II Chapter5-7
+\input{part2.tex}
+
+\newpage
+\section{动力学计算和实现}
+\subsection{Lagrange方程求解}
+构建拉格朗日方程分析机器人的动力学——首先，拉格朗日函数为$ L=T-U$，其中T为系统动能，U为系统势能。
+则n自由度系统的拉格朗日方程可以表示为：
+\begin{equation}
+    \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_i} \right) - \frac{\partial L}{\partial q_i} = \tau_i ; \quad i=1,2,...,n
+\end{equation}
+
+其中，$q_i$为系统的广义坐标，$\tau_i$为广义坐标对应的广义力。
+
+现在分别对连杆$L_i$的动能、势能进行计算，最后带入到拉格朗日方程中求解。为了简化计算，我们使用等效质心的方式表示连杆，且电机和连杆壳体不分开计算，记为同一整体。
+
+\textbf{首先是对连杆$L_i$的动能计算}：
+
+假设连杆$L_i$的质量为$m_i$，在基坐标系下连杆$L_i$的质心向量$p_i=\frac{1}{m_i}\int_{0}^{V_i}{p_i^\ast\rho dV}$，其中$p_i^\ast$为连杆$L_i$上任意一点的坐标。令$r_i=p_i^\ast-p_i$，则$p_i^\ast$的速度为：
+
+\begin{equation}
+    \dot{p_i^{\ast}} = \dot{p_i} + \omega_i \times r_i = \dot{p_i} + S(\omega_i)r_i
+\end{equation}
+
+进而，我们可以对连杆$L_i$上每一个点$p_i^\ast$的动能进行积分，得到连杆$L_i$的位移动能和转动动能分别为：
+\begin{equation}
+    \left\{ \begin{array}{c}	\mathrm{    }T_t=\frac{1}{2}m_i\dot{p_i}^T\dot{p_i}\\	\mathrm{    }T_r=\frac{1}{2}{\omega _i}^TI_i\omega _i=\frac{1}{2}{\omega _i}^T[R_{i}^{0} \cdot I_{i}^{i} \cdot \left( R_{i}^{0} \right) ^T]\omega _i\\\end{array} \right.
+\end{equation}
+
+其中，$I_i$代表基坐标系下$L_i$的转动惯量矩阵，$I_i^i$代表$L_i$坐标系下下$L_i$的转动惯量矩阵，二者之间存在关系$I_i=R_i^0 I_i^i (R_i^0)^T$.
+
+则连杆$L_i$的动能可以表示为：
+\begin{equation}
+    T_i=\frac{1}{2}m_i\dot{p_i^T}\dot{p_i}+\frac{1}{2}\omega_i^T[R_i^0I_i^i(R_i^0)^T]\omega_i
+\end{equation}
+
+其中，$\dot{p_i}=J_{P1}^i\dot{q_1}+ \cdots +J_{Pi}^i\dot{q_i}=J_P^i\dot{q}$，$\omega_i=J_{o1}^i\dot{q_1}+\cdots +J_{oi}^i\dot{q_i}=J_o^i\dot{q}
+$。\\
+
+由于本机器人6个关节均为转动关节，对于转动关节有：
+\begin{equation}
+    \begin{cases}
+        J_{pi}=z_i^0\times (p_e^0-p_i^0)\\
+        J_{oi}=z_i^0
+    \end{cases}
+\end{equation}
+
+代入动能表达式可得连杆$L_i$的动能最终表示为： 
+\begin{equation}
+    T_i=\frac{1}{2}m_i\dot{q_T}(J_p^i)^TJ_P^i\dot{q}+\frac{1}{2}\dot{q_T}(J_o^i)^T[R_i^0I_i^i(R_i^0)^T]=J_o^i\dot{q}
+\end{equation}
+
+由公式可见，给定各杆件质量参数、质心位置参数、转动惯量矩阵和DH参数表，即可计算某种运动轨迹下的连杆动能变化。
+
+\textbf{然后对连杆\(L_i\)的势能计算：}
+
+假设连杆$L_i$的质量为$m_i$，在基坐标系下连杆$L_i$的质心向量为$p_i$，则连杆$L_i$可以表示为：
+\begin{equation}
+    U_i=-m_ig_0^TP_i
+\end{equation}
+
+其中，$g_0=[0\quad 0\quad -g]^T$。由公式可见，给定各杆件质量参数、质心位置参数和DH参数表，即可计算某
+种运动轨迹下的连杆势能变化。
+
+\textbf{把上述结果带入到拉格朗日方程计算和化简：}
+
+机器人系统总动能、总势能为各杆件之和（不考虑负载的情况）。即：
+\[
+T=\sum_{i=1}^{6}T_i\quad U=\sum_{i=1}^{6}U_i\quad L=T-U
+\]
+
+令$B(q)=\sum_{i=1}^{6}m_i(J_p^i)^T J_p^i+(J_o^i)^T[R_i^0I_i^i(R_i^0)^T]J_o^i$，动能T可以由该正定对称矩阵表示为：
+\begin{equation}
+    T=\frac{1}{2}\dot{q}^TB(q)\dot{q}=\frac{1}{2}\sum_{i=1}^6\sum_{j=1}^6b_{ij}(q)\dot{q_i}\dot{q_j}
+\end{equation}
+
+对于坐标$q_i$，有：
+\begin{equation}
+    \frac{\partial L}{\partial \dot{q_i}}=\frac{\partial T}{\partial \dot{q_i}}=\sum_{j=1}^6b_{ij}(q)\dot{q_j}
+\end{equation}
+
+再对t求导，得到拉格朗日方程第一项：
+\begin{equation}
+    \frac{d}{dt}\frac{\partial L}{\partial\dot{q_i}}=\sum_{j=1}^6b_{ij}\ddot{q_j}+\sum_{i=1}^6\sum_{j=1}^6\frac{\partial b_{ij}(q)}{\partial q_k}\dot{q_k}\dot{q_j}
+\end{equation}
+
+再求拉格朗日方程的第二项：
+\begin{equation}
+    \frac{\partial T}{\partial \dot{q_i}}=\frac{1}{2}\sum_{i=1}^6\sum_{j=1}^6\frac{\partial b_{ij}(q)}{\partial q_k}\dot{q_k}\dot{q_j}
+\end{equation}
+
+\begin{equation}
+    \frac{\partial U}{\partial q_i}=-\sum_{j=1}^6m_ig_0^T\frac{\partial p_i}{\partial q_i}=g_i(q)
+\end{equation}
+
+则有：
+\begin{equation}
+    \frac{\partial L}{\partial\dot{q_i}}= \frac{\partial T}{\partial \dot{q_i}}- \frac{\partial U}{\partial q_i}=\frac{1}{2}\sum_{i=1}^6\sum_{j=1}^6\frac{\partial b_{ij}(q)}{\partial q_k}\dot{q_k}\dot{q_j}-g_i(q)
+\end{equation}
+
+
+把两项分别带入，可以将拉格朗日方程求解为： 
+\begin{equation}
+    \sum_{j=1}^6b_{ij}\ddot{q_j}+\frac{1}{2}\sum_{i=1}^6\sum_{j=1}^6\frac{\partial b_{ij}(q)}{\partial q_k}\dot{q_k}\dot{q_j}+g_i(q)=\tau_i
+\end{equation}
+
+给定各杆件质量参数、质心位置参数、转动惯量矩阵和DH参数表，用关节转角表示广义坐标：在已知连杆所受广义力的受力情况，可以通过正动力学得到各关节角速度、角加速度；也可以在已知各关节角速度、角加速度，通过逆动力学反解连杆受力情况。 
+
+由拉格朗日方程可见，进行动力学求解，需要设定以下参数：各连杆质量、各连杆质心位置、各连杆转动惯量矩阵、MDH参数表。如以下代码所示： 
+设计机器人各关节动力学参数(质量(kg)、质心位置(m)、电机惯性、惯量矩阵($kg*m^2$))\\
+
+\textbf{Code 4 \quad 机器人各关节动力学参数设定}
+\begin{lstlisting}
+L(1).m=5.235; 
+L(1).r=[0.115,0,0.192]; 
+L(1).Jm=0.0002; 
+L(1).I=10^(-6)*[233372.299 12.446 115929.582; 
+            12.446 314433.958 -1424.735; 
+            115929.582 -1424.735 104166.070]; 
+\end{lstlisting}
+
+其中，质量、质心位置、转动惯量矩阵可以由SolidWorks的“质量属性”功能得到。由于在建模的时候已经考虑了连杆选用的材料，电机选型和安装位置，所测得的参数结果与实际情况已经比较接近；但由于建模时未考虑电线质量等因素，测定结果依然存在些许误差,如下图\ref{fig:99}所示。
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{Image/fig99.png}
+    \caption{机器人各关节动力学参数设定}
+    \label{fig:99}
+\end{figure}
+值得一提的是，使用robotics toolbox自带函数“fdyn”进行动力学求解时需要设定电机惯性参数，机器人常用的电机惯性参数为$10^{-4}$左右。电机惯性参数对计算结果影响不大。 
+
+\newpage
+\subsection{正向动力学}
+正向动力学是已知各关节受力/力矩情况，求解关节角、角速度、角加速度等信息。在代码实现时主要用到两个函数，\verb|fdyn()|函数可以给定力矩函数得到关节角、角速度，\verb|accel()|函数可以进一步得到关节角速度,细节如下表\ref{tab:fdyn}所示。
+
+\begin{table}[htbp]
+    \centering
+    \caption{正向动力学函数}
+    \label{tab:fdyn}
+    \vspace{5pt}
+    \begin{tabular}{ccc}
+    \rowcolor[HTML]{5B9BD5} 
+    函数                            & 输入参数                  & 输出结果                      \\
+    \rowcolor[HTML]{BDD6EE} 
+    \cellcolor[HTML]{5B9BD5}\verb|fdyn()|  & 时间范围最大值、力矩函数          & \makecell[c]{时间点序列、每个时间点对应\\的关节角、关节角速度序列} \\
+    \rowcolor[HTML]{DEEAF6} 
+    \cellcolor[HTML]{5B9BD5}\verb|accel()| & \makecell[c]{时间点序列以及\\对应的关节角、关节角速度序列} & 关节角速度序列                  
+    \end{tabular}
+\end{table}
+
+以下是代码示例，设定时间为2s之内，$@$ my\_torque\_function为自定义的力矩函数，q1是得到的关节角序列，qd1是得到的关节角速度序列，qdd1是得到的关节角加速度序列，三者与时间点序列t1的各时间点一一对应。
+
+\textbf{Code 5 \quad 正向动力学求解示例}
+\begin{lstlisting}
+%求解关节角和角速度
+[t1,q1,qd1] = robot.nofriction().fdyn(2, @my_torque_function);   
+%求解关节角加速度
+qdd1 = robot.accel(q1,qd1,tau1);        
+\end{lstlisting}
+
+例如，给定$@$my\_torque\_function为常力矩函数，给定各关节力矩如图\ref{fig:torque}所示.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Image/fig51.png}
+    \caption{关节力矩示意图}
+    \label{fig:torque}
+\end{figure}
+
+使用\verb|fdyn|函数和\verb|accel|函数，得到q1，qd1，qdd1，分别作q1-t1，qd1-t1，qdd-t1图像，即得到关节角、角速度、角加速度随时间变化曲线，如图\ref{fig:q1qd1qdd1}所示。
+
+\begin{figure}[htbp]
+    \centering
+    \subfigure[关节角随时间变化曲线]{
+    \includegraphics[width=10cm]{Image/fig52.png}
+    }
+    \subfigure[关节角速度随时间变化曲线]{
+    \includegraphics[width=10cm]{Image/fig53.png}
+    }
+    \subfigure[关节角加速度随时间变化曲线]{
+    \includegraphics[width=10cm]{Image/fig54.png}
+    }
+    \caption{关节角、角速度、角加速度随时间变化曲线}
+    \label{fig:q1qd1qdd1}
+\end{figure}
+
+值得一提的是，robotics toolbox工具包中的fdyn函数底层代码使用的是牛顿-欧拉法，即基于经典力学中的牛顿运动定律和欧拉转动定律推导得出动力学求解结果。这种算法更适合串联式机器人结构，与拉格朗日法相比，牛顿-欧拉法更加直观，但是计算复杂，且难以处理并联式机器人。
+\newpage
+\subsection{逆向动力学}
+逆向运动学是已知各关节角、角速度、角加速度信息，求解各关节受力/力矩情况。在代码实现过程中主要应用\verb|rne()|函数，该函数给定关节角等信息可以得到力矩。关节角等对应参数可以通过运动学的求解得到,细节如下表\ref{tab:rne}所示。
+
+\begin{table}[htbp]
+    \centering
+    \caption{逆向动力学函数}
+    \label{tab:rne}
+    \vspace{5pt}
+    \begin{tabular}{ccc}
+    \rowcolor[HTML]{5B9BD5} 
+    函数                            & 输入参数                  & 输出结果                      \\
+    \rowcolor[HTML]{BDD6EE} 
+    \cellcolor[HTML]{5B9BD5}\verb|rne()|  & \makecell[c]{关节角序列、角速度序列、角加速度序列、\\重力加速度向量(可选，默认为[0 0 9.81])}          &  力矩序列\\                
+    \end{tabular}
+\end{table}
+
+以下是代码示例，所给定的关节角序列q，角速度序列qd，角加速度序列qdd必须是行数相等的列向量，计算得到的力矩序列tau的行数也与它们相同。例如，给定初始关节角位姿和结束时关节角位姿，用五次多项式法规划得到两个位置之间的移动轨迹，使用逆向运动学的方法求解，得到对应时间点的各关节角、角速度、角加速度序列。
+
+\begin{figure}[htbp]
+    \centering
+    \subfigure[关节末端轨迹图]{
+    \includegraphics[width=0.4\textwidth]{Image/fig55.png}
+    \label{fig:55}
+    }
+    \subfigure[关节角随时间变化曲线]{
+    \includegraphics[width=0.4\textwidth]{Image/fig56.png}
+    \label{fig:56}
+    }
+    \subfigure[关节角速度随时间变化曲线]{
+    \includegraphics[width=0.4\textwidth]{Image/fig57.png}
+    \label{fig:57}
+    }
+    \subfigure[关节角加速度随时间变化曲线]{
+    \includegraphics[width=0.4\textwidth]{Image/fig58.png}
+    \label{fig:58}
+    }
+    \caption{逆向动力学求解结果}
+\end{figure}
+
+\newpage
+\textbf{Code 6 \quad 逆向动力学求解示例}
+\begin{lstlisting}
+tau=robot.rne(q,qd,qdd,[0 0 9.81]);   
+%逆向动力学，根据关节角、角速度、角加速度求解关节力矩，取g=9.81m/s^2
+init=[0 -pi/3 pi/6 -pi/5 pi/2 pi/4];   %位置1关节角
+targ=[pi/3 pi/3 0 pi/5 0 pi/3];   %位置2关节角
+time=0:0.01:2;   %时间序列
+%五次多项式规划位置1到位置2的运动轨迹，得到关节角度，角速度，角加速度
+[q, qd, qdd]=jtraj(init,targ,time);
+\end{lstlisting}   
+
+将上述运行结果绘制成图像，得到关节末端轨迹图、关节角随时间变化曲线、关节角速度随时间变化曲线、关节角加速度随时间变化曲线，如图\ref{fig:55}、\ref{fig:56}、\ref{fig:57}、\ref{fig:58}所示。
+
+将得到的q、qd、qdd带入rne函数中，可以得到力矩序列tau，作tau-time图像，即得到力矩随时间变化曲线。如图\ref{fig:59}所示。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Image/fig59.png}
+    \caption{力矩随时间变化曲线}
+    \label{fig:59}
+\end{figure}
+
+\newpage
+
+% PART IV Chapter8
+\input{part4.tex}
+
+\newpage
+\section{Reference}
+[1]Peter Corke 机器人学、机器视觉与控制 MATLAB算法基础; Robotics, Vision and Control Fundamental Algorithms in MATLAB. 电子工业出版社, 2016. Print. 经典译丛·人工智能与智能系统，\href{https://doi.org/10.1007/978-3-319-54413-7}{https://doi.org/10.1007/978-3-319-54413-7}
+
+[2]石青 (2019) MATLAB基础与机器人学应用; MATLAB foundation and its applications in robotics. 北京理工大学出版社
+
+[3]克雷格 机器人学导论 = Introduction to Robotics: Mechanics and Control. 机械工业出版社, 2018. Print. 机器人学译丛
+
+[4]李星辰,杨国庆,王宪,等.6轴工业机器人工作空间快速求解[J]. 机械科学与技术, 2023, 42(08): 1213-1220.DOI:10.13433/j.cnki.1003-8728.20220067.
+
+
+\newpage
+\section{Appendix}
+烦请老师查看附件中的相关建模、代码、视频以及PPT，在这里汇总一下：
+\begin{enumerate}
+    \item \textbf{机器人建模部分}：内含有零件图、装配体图。以及我们在展示过程中的渲染图，含有匹配SoildWorks2018版本和2022版本的建模文件。渲染是基于2018版本的。
+    \item \textbf{机器人运动学代码}：内含基础正逆运动学计算：基于工具包和不基于工具包；以及我们自己设计的圆弧运动\verb|DrawCircle.m|和\verb|CatchBall.m|；实现运动学解析逆解的代码文件为\verb|inkine8.m|。
+    \item \textbf{机器人工作空间代码}：内含代码文件\verb|workspace_MonteCarlos.m|,使用的传统的Mento-Carlo方法；以及我们报告中所使用的\verb|MentoCarlo_Improved.m|，采用改进Mento-Carlo方法。
+    \item \textbf{机器人动力学代码}：内含Jacobian矩阵的计算\verb|Jacobian.m|和正逆动力学求解代码。
+    \item \textbf{机器人控制模型}：\verb|Model.slx|是我们的总模型，其中包含了我们建立的模型的slx格式，可进行仿真工作。\verb|Circle.m|是自定义信号的输入。\verb|vloop.slx|是速度环控制模型；\verb|ploop.slx|是位置环控制模型,是我们对工业机械臂关节控制的理论复现。
+    \item \textbf{2024年6月4日课堂展示的PPT}。
+    \item \textbf{Simulink-Configuration.pdf}.
+\end{enumerate}
+\end{document}

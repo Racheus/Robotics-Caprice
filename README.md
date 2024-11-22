@@ -50,7 +50,7 @@ Python Version:
 
 **Homework#4**: Dynamics(为什么我的眼里常含泪水？)
 
-**Homework #5-Kinematic Trajectory Planning**：[homework5_Kinematic_Trajectory_Planning](https://github.com/Racheus/Robotics-Caprice/blob/master/Homework5-Kinematic-Trajectory-Planning/RoboticsHomework5.pdf)
+**Homework #5**：[homework5_Kinematic_Trajectory_Planning](https://github.com/Racheus/Robotics-Caprice/blob/master/Homework5-Kinematic-Trajectory-Planning/RoboticsHomework5.pdf)
 
 Results: From joint operation space:
 
@@ -100,13 +100,17 @@ Perform simulation tasks in the *Pybullet* simulation environment and implement 
 
 Environment base:
 
-Robotic-Toolbox-Python:[https://github.com/petercorke/robotics-toolbox-python](https://github.com/petercorke/robotics-toolbox-python)
+Robotic-Toolbox-Python: [https://github.com/petercorke/robotics-toolbox-python](https://github.com/petercorke/robotics-toolbox-python)
 
-Pybullet Documentation:[Pybullet](https://docs.google.com/document/d/10sXEhzFRSnvFcl3XxNGhnD4N2SedqwdAvK3dsihxVUA/edit# heading=h.2ye70wns7io3)
+Pybullet Documentation: [Pybullet](https://docs.google.com/document/d/10sXEhzFRSnvFcl3XxNGhnD4N2SedqwdAvK3dsihxVUA/edit#)
+
+A demo of pybullet-simulation : grasping
+
+https://github.com/user-attachments/assets/dead7a45-c393-4056-9aa5-e25e425fe059
 
 
 
+Offline experiment:
 
-
-
+https://github.com/user-attachments/assets/ee737601-054e-4ef9-b9b1-49a3318c01ea
 

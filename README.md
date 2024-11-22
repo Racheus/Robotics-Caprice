@@ -1,5 +1,5 @@
 ## Robotics Caprice
-###  ME3403 , Robotics , 2023-2024-2
+###  ME3403 , Robotics , 2023-2024-2 & 2024-2025-1
 #### Racheus Zhao , school of Mechanic Enginnering ,SJTU
 
 ---
@@ -28,7 +28,7 @@ Example for Chapter 1:
 
 
 
-Homework for Chapter1:2R-Robotics-Kinematics
+**Homework #1**:2R-Robotics-Kinematics
 
 Report PDF edition：
 
@@ -44,13 +44,13 @@ Python Version:
 
 ![Insert Error!](https://github.com/Racheus/Robotics-Caprice/blob/master/Homework1-2Rrobot-Kine/src/robot_trajectory_py.gif)
 
+**Homework #2**:[Homework2: Math foundations](https://github.com/Racheus/Robotics-Caprice/blob/master/Homework2-Mathematic-foundations/RoboticsHomework2.pdf)
 
+**Homework #3**:[Homework3:Kinematics](https://github.com/Racheus/Robotics-Caprice/blob/master/Homework3-Kinematics/RoboticsHomework3.pdf)(May have errors!)
 
-Homework5-Kinematic Trajectory Planning：
+**Homework#4**: Dynamics(为什么我的眼里常含泪水？)
 
-Report PDF edition：
-
-[homework5_Kinematic_Trajectory_Planning](https://github.com/Racheus/Robotics-Caprice/blob/master/Homework5-Kinematic-Trajectory-Planning/RoboticsHomework5.pdf)
+**Homework #5-Kinematic Trajectory Planning**：[homework5_Kinematic_Trajectory_Planning](https://github.com/Racheus/Robotics-Caprice/blob/master/Homework5-Kinematic-Trajectory-Planning/RoboticsHomework5.pdf)
 
 Results: From joint operation space:
 
@@ -64,9 +64,11 @@ If planning it by pose space, the robot will have some *configuration mutation p
 
 ![Insert Error!](https://github.com/Racheus/Robotics-Caprice/blob/master/Homework5-Kinematic-Trajectory-Planning/src/robot_animation_bypose.gif)
 
+
+
 ---
 
-### Final works of Robotics 2023-2024-2
+### Chapter 2 Final works of Robotics 2023-2024-2（ME3403）
 
 This time we make a model from *Solidworks*. After using Solidworks to build the model, we used the relevant theories of robotics to calculate the reachable space, kinematics (forward and inverse), dynamics (forward and inverse) and other functions in MATLAB, and finally combined Simulink to simulate the kinematics and dynamics.
 
@@ -83,6 +85,28 @@ And we calculate the workspace by Traditional Monte Carlo method and Improved Mo
 We build a model in Simulink with our rigid model to simulate the Kinematics and Dynamics issues.
 
 ![Insert Error!](https://github.com/Racheus/Robotics-Caprice/blob/master/Images/ABBIRB.png)
+
+## 
+
+---
+
+### Chapter 3 Final works of Robotics 2024-2025-1（AU3307）
+
+This part focuses on an actual robot, DOFBOT. It is a small robot composed of 5 rotating joints.
+
+![Insert Error!](https://github.com/Racheus/Robotics-Caprice/blob/master/Images/DOFBOT.png)
+
+Perform simulation tasks in the *Pybullet* simulation environment and implement the robot's grasping of objects offline.
+
+Environment base:
+
+Robotic-Toolbox-Python:[https://github.com/petercorke/robotics-toolbox-python](https://github.com/petercorke/robotics-toolbox-python)
+
+Pybullet Documentation:[Pybullet](https://docs.google.com/document/d/10sXEhzFRSnvFcl3XxNGhnD4N2SedqwdAvK3dsihxVUA/edit# heading=h.2ye70wns7io3)
+
+
+
+
 
 
 

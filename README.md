@@ -1,8 +1,9 @@
 <center>
-    <font face="微软雅黑" size=12>
+    <font size=12>
         Robotics Caprice
     </font>
 </center>
+
 
 <center>
 ME3403 , Robotics , 2023-2024-2 & 2024-2025-1

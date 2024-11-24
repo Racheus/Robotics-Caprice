@@ -1,6 +1,21 @@
-## Robotics Caprice
-###  ME3403 , Robotics , 2023-2024-2 & 2024-2025-1
-#### Racheus Zhao , school of Mechanic Enginnering ,SJTU
+<center>
+    <font face="微软雅黑" size=12>
+        Robotics Caprice
+    </font>
+</center>
+
+<center>
+ME3403 , Robotics , 2023-2024-2 & 2024-2025-1
+<center>
+    Racheus Zhao , school of Mechanic Enginnering ,SJTU
+</center>
+
+<center>
+    <img alt="Static Badge" src="https://img.shields.io/badge/MATLAB-2023b-green">
+    <img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/roboticstoolbox-python">
+	<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Racheus/Robotics-Caprice">
+    <img alt="GitHub License" src="https://img.shields.io/github/license/Racheus/Robotics-Caprice">
+</center>
 
 ---
 莽红尘，何处觅知音？青衫湿。
